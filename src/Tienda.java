@@ -13,8 +13,9 @@ public class Tienda {
         this.cantidad = this.productos.size();
     }
 
-    public List<RadioReloj> getProductos() {
-        return productos;
+    public RadioReloj[] getProductos() {
+        RadioReloj[] prods = this.productos.toArray(new RadioReloj[this.productos.size()]);
+        return prods;
     }
 
     public void addProducto(RadioReloj producto) {

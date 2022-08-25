@@ -52,7 +52,7 @@ public class Reloj {
 
     public String toShortTime(){
         /**
-        if(this.horas > 12){
+        if(this.horas >= 12){
             return String.valueOf(this.horas-12) + ":" + String.valueOf(this.minutos) + "pm";
         }else{
             return String.valueOf(this.horas) + ":" + String.valueOf(this.minutos) + "am";
